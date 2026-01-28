@@ -75,7 +75,7 @@ traffic = pd.read_csv('data/traffic_data.csv')
 weather = pd.read_csv('data/weather_data.csv')
 events = pd.read_csv('data/events_data.csv')
 
-# Merge datasets
+# Use this to merge datasets
 df = pd.merge(traffic, weather, on='timestamp', how='left')
 df = pd.merge(df, events, on='timestamp', how='left')
 df['event_type'] = df['event_type'].fillna('none')
