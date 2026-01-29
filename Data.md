@@ -1,5 +1,3 @@
-# Data Information
-
 ## Overview
 
 This directory contains sample datasets for the Accra Traffic Prediction & ETA Engine. The data spans 30 days (January 1-30, 2026) with measurements from 6 AM to 9 PM daily.
