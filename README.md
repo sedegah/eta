@@ -9,7 +9,7 @@ A comprehensive machine learning system for predicting traffic speeds and calcul
 - **Route Optimization**: Find the fastest route based on current conditions
 - **Traffic Pattern Analysis**: Analyze historical traffic patterns and trends
 - **Departure Time Optimization**: Determine the best time to travel
-- **Weather Integration**: Factor in weather conditions (rain, temperature, humidity)
+- **Weather Integration**: Factor in weather conditions (rain, temperature, humidity) 
 - **Event Awareness**: Account for special events that impact traffic
 - **Prediction Caching**: Improved performance for repeated queries
 - **Confidence Intervals**: Uncertainty estimates for all predictions
