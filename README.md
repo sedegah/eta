@@ -61,7 +61,7 @@ Run the built-in validator to confirm the CSV files are complete and internally 
 python scripts/validate_data.py
 ```
 
-This checks schema correctness, basic value ranges, and whether timestamps can be merged safely across traffic, weather, and events datasets.
+This checks schema/order correctness, timestamp format validity, value ranges, known category values, and whether timestamps can be merged safely across traffic, weather, and events datasets. The validator uses only Python standard library modules, so it can run before installing notebook dependencies.
 
 ### Basic Usage
 

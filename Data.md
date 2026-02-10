@@ -87,7 +87,7 @@ Before model training, validate dataset integrity:
 python scripts/validate_data.py
 ```
 
-The validator checks file presence, expected columns, value ranges, and timestamp mergeability across all CSV files.
+The validator checks file presence, strict column order, timestamp format, value ranges, known category values, and timestamp mergeability across all CSV files.
 
 ## Notes
 
