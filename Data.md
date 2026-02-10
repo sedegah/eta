@@ -79,6 +79,16 @@ df = pd.merge(df, events, on='timestamp', how='left')
 df['event_type'] = df['event_type'].fillna('none')
 ```
 
+## Quick Validation
+
+Before model training, validate dataset integrity:
+
+```bash
+python scripts/validate_data.py
+```
+
+The validator checks file presence, strict column order, timestamp format, value ranges, known category values, and timestamp mergeability across all CSV files.
+
 ## Notes
 
 - All timestamps are aligned for proper merging
