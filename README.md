@@ -43,7 +43,7 @@ cd eta
 
 2. Install required dependencies:
 ```bash
-pip install pandas numpy scikit-learn xgboost ipywidgets
+pip install -r requirements.txt
 ```
 
 3. Launch Jupyter Notebook:
@@ -52,6 +52,16 @@ jupyter notebook eta.ipynb
 ```
 
 ## Usage
+
+### Validate Data Before Training
+
+Run the built-in validator to confirm the CSV files are complete and internally consistent:
+
+```bash
+python scripts/validate_data.py
+```
+
+This checks schema correctness, basic value ranges, and whether timestamps can be merged safely across traffic, weather, and events datasets.
 
 ### Basic Usage
 
@@ -172,6 +182,12 @@ The XGBoost models achieve strong performance on historical data:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Development Notes
+
+- Use `requirements.txt` for dependency installation to keep environments consistent.
+- Run `python scripts/validate_data.py` before retraining models if datasets are modified.
+- Keep the notebook outputs lightweight where possible to reduce repository churn.
 
 ## License
 
